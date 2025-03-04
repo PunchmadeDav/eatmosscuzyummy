@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "eatmosscuzyummy",
+	"version": "${version}",
+	"name": "EatMossCuzYummy",
+	"description": "Eating Moss ig",
+	"authors": [
+		"Punchmade Dav"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/eatmosscuzyummy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"punchmade.dav.EatMossCuzYummy"
+		],
+		"client": [
+			"punchmade.dav.EatMossCuzYummyClient"
+		]
+	},
+	"mixins": [
+		"eatmosscuzyummy.mixins.json",
+		{
+			"config": "eatmosscuzyummy.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
